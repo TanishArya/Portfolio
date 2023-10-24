@@ -140,6 +140,10 @@ html,body {
 
 /* for mobail */
 @media only screen and (min-width:320px) and (max-width: 420px) {
+    #nav a{
+        font-size: small;
+    }
+    
     #home{
         padding-top: 50%;
     }
@@ -158,11 +162,11 @@ html,body {
     #about{
         padding-right: 15%;
         font-size: 12px; 
-        padding-top: 15%;   
+        padding-top: 20%;   
     } 
 
     #project{
-        padding-top: 15%;
+        padding-top: 20%;
         padding-right: 08%;
         font-size: 11px;
     }
