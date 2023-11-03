@@ -120,7 +120,7 @@ html,body {
     background-position: center;
     background-repeat: no-repeat;
     position: static;
-    display: flex;
+    display: grid;
     padding-top: 04%;
 }
 
