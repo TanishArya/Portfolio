@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,10 +10,10 @@ html,body {
 }
 
 #main {
+    gap: 20px;
     height: 100%;
     width: 100%;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: none;
 }
 
 #nav {
@@ -39,6 +39,12 @@ html,body {
     margin-left: 25%;
 }
 
+#home>img{
+    position: absolute;
+    right: 20%;
+    height: 140%; 
+}
+
 #home {
     height: 100%;
     width:100%;
@@ -51,6 +57,15 @@ html,body {
     background-position: center;
     background-repeat: no-repeat;
     position: static;
+    z-index: 999;
+    display: flex;
+}
+
+#homa>a>i{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+
 }
 
 #home h1{
@@ -133,13 +148,19 @@ html,body {
 
 #skill {
     height: 300px;
-    display: flex;
+    display: grid;
     padding-top: 08%;
     justify-content:space-evenly
 }
 
 /* for mobail */
-@media only screen and (min-width:320px) and (max-width: 420px) {
+@media only screen and (min-width:320px) and (max-width: 420px) and (min-height:320px) and (max-height: 420px) {
+    
+    #resume{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
     #nav a{
         font-size: small;
     }
@@ -151,6 +172,7 @@ html,body {
     #home h1{
         font-size: 50px;
     }
+    
     #home h2{
         font-size: 50px;
     }
@@ -162,11 +184,11 @@ html,body {
     #about{
         padding-right: 15%;
         font-size: 12px; 
-        padding-top: 20%;   
+        padding-top: 15%;   
     } 
 
     #project{
-        padding-top: 20%;
+        padding-top: 15%;
         padding-right: 08%;
         font-size: 11px;
     }
@@ -185,7 +207,12 @@ html,body {
    }
 
 /* for tablet */
-@media only screen and (min-width:481px) and (max-width: 768px) {
+@media only screen and (min-width:481px) and (max-width: 768px) and (min-height:481px) and (max-height: 768px) {
+    
+    #result{
+        grid-template-columns: repeat(1,1fr);
+    }
+
     #nav a{
         font-size: small;
     }
@@ -197,6 +224,7 @@ html,body {
     #home h1{
         font-size: 50px;
     }
+    
     #home h2{
         font-size: 50px;
     }
@@ -232,7 +260,8 @@ html,body {
 
 
 /* for small screen laptop */
-@media only screen and (min-width:769px) and (max-width: 881px) {
+@media only screen and (min-width:769px) and (max-width: 881px) and (min-height:769px) and (max-height: 881px)  {
+    
     #nav a{
         font-size: small;
     }
@@ -244,6 +273,7 @@ html,body {
     #home h1{
         font-size: 50px;
     }
+    
     #home h2{
         font-size: 50px;
     }
@@ -277,7 +307,8 @@ html,body {
     }
 }
 
-@media only screen and (min-width: 881px) and (max-width:1024px) {
+@media only screen and (min-width: 881px) and (max-width:1024px) and (min-height:881px) and (max-height: 1024px) {
+    
     #nav a{
         font-size: small;
     }
@@ -289,6 +320,7 @@ html,body {
     #home h1{
         font-size: 50px;
     }
+    
     #home h2{
         font-size: 50px;
     }
@@ -324,6 +356,7 @@ html,body {
 }
 
 @media only screen and (min-width: 1025px) and (max-width:1300px){
+    
     #nav a{
         font-size: medium;
     }
@@ -335,6 +368,7 @@ html,body {
     #home h1{
         font-size: 60px;
     }
+    
     #home h2{
         font-size: 60px;
     }
