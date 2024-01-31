@@ -115,6 +115,7 @@ html,body {
     font-size: 18px;
     padding-top: 02%;
     padding-left: 08%;
+    padding-right: 5%;
 }
 
 
@@ -126,8 +127,9 @@ html,body {
 #objective  {
     height: 300px;
     font-size: 18px;
-    padding-top: 08.5%;
-    padding-left: 05%;
+    padding-top: 20%;
+    padding-left: 5%;
+    padding-right:10%;
     position: static;
 }
 
