@@ -127,7 +127,7 @@ html,body {
 #objective  {
     height: 300px;
     font-size: 18px;
-    padding-top: 20%;
+    padding-top: 08.5%;
     padding-left: 5%;
     padding-right:10%;
     position: static;
@@ -176,6 +176,11 @@ html,body {
     #detail,#objective,#skill,#detail a{
         font-size: 11px;
     }
+    
+    #objective{
+        padding-top: 20%;
+    }
+
 
     #resume{
         padding-top: 09%;
